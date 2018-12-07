@@ -41,9 +41,9 @@ const randomController = require('./controllers/randomUser');
  */
 r = new randomUser();
 
-/*r.getUsers(function(data) {
+r.getUsers(function(data) {
   randomController.insertUser(data);
-});*/
+});
 
 
 /**
