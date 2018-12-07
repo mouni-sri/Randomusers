@@ -1,0 +1,37 @@
+extends layout
+
+block content
+
+	.container
+		h3 Male
+		.table-responsive
+			table.table.table-hover.table-condensed
+				thead
+					tr
+						th Nationality
+						th 0-30
+						th 30-50
+						th 50 and above
+				tbody
+				each male, i in males
+					tr
+						td #{male._id}
+						td #{male.lessThan30}
+						td #{male.middle50}
+						td #{male.moreThan50}
+		h3 Female
+		.table-responsive
+			table.table.table-hover.table-condensed
+				thead
+					tr
+						th Nationality
+						th 0-30
+						th 30-50
+						th 50 and above
+				tbody
+				each female, i in females
+					tr
+						td #{female._id}
+						td #{female.lessThan30}
+						td #{female.middle50}
+						td #{female.moreThan50}
